@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    <!--
     <LinearLayout
         android:id="@+id/left_comp"
         android:layout_width="wrap_content"
@@ -13,7 +13,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="220dp"
-        android:background="@drawable/rounded_rect_black_nostroke"
+        android:background="@drawable/rounded_left_rect_black_nostroke"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -57,7 +57,7 @@
         android:layout_marginLeft="2dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:background="@drawable/rounded_rect_red__nostroke"
+        android:background="@drawable/rounded_right_rect_red__nostroke"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/left_comp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,6 +94,16 @@
             android:textStyle="bold" />
 
     </LinearLayout>
+    -->
 
 
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.mapelli.simone.edittextcostum.AutoreadingFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

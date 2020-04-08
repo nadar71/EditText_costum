@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_rect_lightgrey_withstroke"
+    tools:context=".AutoreadingFragment">
+
+    <!--
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/left_comp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="164dp"
+        android:background="@drawable/rounded_left_rect_black_nostroke"
+        app:layout_constraintEnd_toStartOf="@+id/rigth_comp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    -->
+
+    <TextView
+        android:id="@+id/m_cube_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:background="@drawable/rounded_left_rect_black_nostroke"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="21dp"
+        android:text="m3"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/left"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <EditText
+        android:id="@+id/left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_dark"
+        android:ems="3"
+        android:gravity="right|center_vertical"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        android:paddingLeft="0dp"
+        android:paddingTop="8dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="8dp"
+        android:text="00000"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/m_cube_text"
+        app:layout_constraintEnd_toStartOf="@+id/comma_text"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="2.5"
+        app:layout_constraintStart_toEndOf="@+id/m_cube_text" />
+
+    <TextView
+        android:id="@+id/comma_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#D40000"
+        android:padding="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text=","
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/left"
+        app:layout_constraintEnd_toStartOf="@+id/right"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="0.4"
+        app:layout_constraintStart_toEndOf="@+id/left" />
+
+    <EditText
+        android:id="@+id/right"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:background="@drawable/rounded_right_rect_red__nostroke"
+        android:ems="4"
+        android:inputType="numberDecimal"
+        android:maxLength="3"
+        android:paddingLeft="3dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="000"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/comma_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@+id/comma_text" />
+
+    <!--
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rigth_comp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_right_rect_red__nostroke"
+            app:layout_constraintBottom_toTopOf="@+id/left_comp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/left_comp"
+            app:layout_constraintTop_toBottomOf="@+id/left_comp">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
