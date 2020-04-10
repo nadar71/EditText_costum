@@ -19,11 +19,7 @@ class AutoreadingFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?): View? {
-        val layoutContent =  inflater.inflate(R.layout.fragment_autoreading, container, false)
-        // val m_cube_text = layoutContent.findViewById<TextView>(R.id.m_cube_text)
-        // m_cube_text.text = Html.fromHtml("m<sup>3</sup>")
-
-        return layoutContent
+        return inflater.inflate(R.layout.fragment_autoreading, container, false)
     }
 
     companion object {

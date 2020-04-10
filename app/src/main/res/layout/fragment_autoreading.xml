@@ -60,6 +60,8 @@
         android:id="@+id/left_edittext"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:cursorVisible="false"
         android:ems="3"
         android:gravity="right|center_vertical"
         android:inputType="numberDecimal"
@@ -204,19 +206,5 @@
         app:layout_constraintTop_toBottomOf="@+id/left"
         app:layout_constraintVertical_bias="0.32999998" />
 
-    <!--
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/rigth_comp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded_right_rect_red__nostroke"
-            app:layout_constraintBottom_toTopOf="@+id/left_comp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/left_comp"
-            app:layout_constraintTop_toBottomOf="@+id/left_comp">
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-        -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

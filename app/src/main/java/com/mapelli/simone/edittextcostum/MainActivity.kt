@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
             override fun afterTextChanged(p0: Editable?) {
                 val currentText : StringBuilder
                 when(left_edit.text.toString()){
-                    ".","-","," -> { // filter excluded char
+                    ".","-","," -> { // filter excluded chars
                         currentText = StringBuilder(left_text.text.toString())
                         left_edit.text.clear()
                         left_text.setText(currentText)
